@@ -1,6 +1,7 @@
 <template>
   <div class="app">
     <h1>Todo application</h1>
+    <AddTodo />
     <hr>
     <TodoList
       v-bind:todos="todos"
@@ -11,6 +12,7 @@
 
 <script>
 import TodoList from './components/TodoList'
+import AddTodo from './components/AddTodo'
 export default {
   name: 'App',
   data () {
@@ -28,7 +30,7 @@ export default {
     }
   },
   components: {
-    TodoList
+    TodoList, AddTodo
   }
 }
 </script>
